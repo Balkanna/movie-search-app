@@ -1,0 +1,135 @@
+.header,
+.footer {
+    background-color: #282c34;
+}
+
+.header-container h1 {
+    padding: 18px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main {
+    min-height: calc(100vh - 140px);
+}
+
+.slider-container {
+    padding: 10px 50px 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.search-container {
+    width: 100%;
+    text-align: center;
+}
+ 
+input[type="text"] {
+    width: 37%;
+    min-width: 160px;
+}
+
+.search__button {
+    text-transform: uppercase;
+}
+
+.search__results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: .75rem;
+}
+
+.card-text,
+.card-body {
+    text-align: center;
+}
+
+.card-image-top {
+    transition: 1s; 
+}
+
+.card .card-img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*img:hover {
+    transform: scale(1.2);
+}*/
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+.footer-container a {
+    color: #ffffff;
+}
+
+.copyright {
+    padding-right: 15px;
+}
+
+.fab {
+    padding-right: 4px;
+}
+
+.footer-container a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+}
+  
+h1:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+}
+
+img:hover {
+    transform: scale(0.9);
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+

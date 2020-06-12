@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MovieSearchApp</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1>movie search</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="search">
+            <div class="search-container">
+                <form class="search__form" id="search__form" action="">
+                    <input class="search__input" type="text" placeholder="Search movie" required autocomplete="off">
+                    <button class="search__button">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="slider-container">
+                <div class="search__results" id="results"> </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="copyright"><p>Copyright, 2020</p></div>
+            <a target='blank' href='https://github.com/Balkanna'><i class="fab fa-github"></i>Anna B.</a>
+        </div>
+    </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
