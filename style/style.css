@@ -76,8 +76,10 @@ input[type="text"] {
     justify-content: center;
 }
 
-.card {
-    border: none !important;
+.search__results .card-column,
+.favorites .card-column {
+    background-color: inherit;
+    border: none;
 }
 
 .card-title {
@@ -103,8 +105,14 @@ input[type="text"] {
     width: 15%;
 }
 
-.favorites-container h3 {
+.favorites-container h4 {
     text-align: center;
+}
+
+.card-body .remove-button,
+.card-body .remove-button:hover {
+    background-color: #ff0000;
+    border-color: inherit;
 }
 
 .footer-container {
@@ -153,4 +161,45 @@ img:hover {
 	100% {
 		opacity: 1;
 	}
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 980px) {
+    .search__results .col-3 {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card h5 {
+        font-size: 1rem;
+    }
+
+    .favorites-container {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    .movie {
+        padding: 10px 10px 20px;
+    }
+
+    .favorites-container {
+        width: 35%;
+    }
+
+    .search__results .col-3 {
+        flex: 0 0 91%;
+        max-width: 91%;
+    }
 }
